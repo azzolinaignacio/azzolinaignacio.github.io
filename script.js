@@ -31,6 +31,8 @@ const I18N = {
     "about.fact4d": "Proyectos SaaS de punta a punta",
 
     "projects.title": "Proyectos",
+    "projects.repoLink": "Código en GitHub ↗",
+    "projects.demoLink": "Demo en vivo ↗",
 
     "case.tag": "Caso de estudio · Proyecto principal",
     "case.tagline": "SaaS multitenant para la gestión de negocios de servicios",
@@ -107,6 +109,8 @@ const I18N = {
     "about.fact4d": "End-to-end SaaS projects",
 
     "projects.title": "Projects",
+    "projects.repoLink": "Source on GitHub ↗",
+    "projects.demoLink": "Live demo ↗",
 
     "case.tag": "Case study · Flagship project",
     "case.tagline": "Multitenant SaaS for service business management",

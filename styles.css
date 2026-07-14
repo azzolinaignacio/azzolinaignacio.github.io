@@ -329,6 +329,18 @@ main { max-width: 1000px; margin: 0 auto; padding: 0 1.25rem; }
   font-weight: 600;
 }
 
+.project-links { margin-top: 0.75rem; }
+.project-links a {
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 1px;
+  transition: color 150ms ease;
+}
+.project-links a:hover { color: var(--accent); }
+
 /* ============ Experiencia / Timeline ============ */
 .timeline {
   list-style: none;
