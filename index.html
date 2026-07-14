@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ignacio Azzolina — Desarrollador de Software</title>
+  <meta name="description" content="Desarrollador de software con base de técnico electricista. Construyo SaaS con FastAPI y Supabase. Resuelvo problemas de punta a punta: hardware, electricidad y código.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link" data-i18n="skipLink">Saltar al contenido principal</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Principal">
+      <a href="#inicio" class="nav-logo">IA<span class="accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a></li>
+        <li><a href="#proyectos" data-i18n="nav.projects">Proyectos</a></li>
+        <li><a href="#experiencia" data-i18n="nav.experience">Experiencia</a></li>
+        <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+      </ul>
+      <button id="lang-toggle" class="lang-toggle" aria-label="Switch to English">
+        <span aria-hidden="true">🌐</span> <span id="lang-label">EN</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section id="inicio" class="hero">
+      <img src="assets/perfil.jpg" alt="Foto de Ignacio Azzolina" width="800" height="800"
+           class="hero-photo" data-i18n-alt="hero.photoAlt">
+      <div class="hero-content">
+      <p class="hero-kicker" data-i18n="hero.kicker">Desarrollador de software · Técnico electricista</p>
+      <h1 class="hero-title" data-i18n-html="hero.title">
+        De los circuitos al código:<br>resuelvo problemas <span class="accent">de punta a punta</span>.
+      </h1>
+      <p class="hero-sub" data-i18n="hero.sub">
+        Construyo SaaS con FastAPI y Supabase con la misma mentalidad con la que diagnostico
+        una falla eléctrica: entender el sistema completo, encontrar la causa raíz y dejarlo funcionando.
+      </p>
+      <div class="hero-actions">
+        <a href="#proyectos" class="btn btn-primary" data-i18n="hero.ctaProjects">Ver mis proyectos</a>
+        <a href="#contacto" class="btn btn-ghost" data-i18n="hero.ctaContact">Hablemos</a>
+      </div>
+      <ul class="hero-badges" aria-label="Stack principal">
+        <li>Python · FastAPI</li>
+        <li>Supabase · PostgreSQL</li>
+        <li>Next.js · TypeScript</li>
+        <li data-i18n="hero.badgeHw">Electricidad · Hardware</li>
+      </ul>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE MÍ ============ -->
+    <section id="sobre-mi" class="section">
+      <h2 class="section-title"><span class="section-num">01</span> <span data-i18n="about.title">Sobre mí</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p data-i18n="about.p1">
+            Soy estudiante de sistemas y técnico electricista. Ese doble perfil no es una casualidad:
+            es mi mayor ventaja. Entiendo el software desde la lógica del código, y el mundo físico
+            desde el tablero eléctrico. Cuando algo falla —sea un endpoint o una instalación— mi
+            proceso es el mismo: observar, aislar el problema, corregir y verificar.
+          </p>
+          <p data-i18n="about.p2">
+            Trabajé un año en una ferretería, donde cada cliente llegaba con un problema distinto y
+            se iba con una solución. Hice una pasantía como técnico eléctrico en una bodega, manteniendo
+            sistemas que no podían detenerse. Hoy aplico esa misma exigencia a mis proyectos de software:
+            los diseño, los desarrollo y los mantengo de forma independiente, de la base de datos al deploy.
+          </p>
+          <p data-i18n="about.p3">
+            Busco un equipo donde un perfil resolutivo e híbrido sume de verdad: alguien que no le
+            escapa a los problemas difíciles, ni a los que están fuera de su descripción de puesto.
+          </p>
+        </div>
+        <ul class="about-facts" aria-label="Datos rápidos">
+          <li><strong data-i18n="about.fact1t">Perfil híbrido</strong><span data-i18n="about.fact1d">Software + electricidad/hardware</span></li>
+          <li><strong data-i18n="about.fact2t">1 año en ferretería</strong><span data-i18n="about.fact2d">Resolución de problemas cara a cara</span></li>
+          <li><strong data-i18n="about.fact3t">Pasantía técnica</strong><span data-i18n="about.fact3d">Mantenimiento eléctrico en bodega</span></li>
+          <li><strong data-i18n="about.fact4t">Autogestión</strong><span data-i18n="about.fact4d">Proyectos SaaS de punta a punta</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ PROYECTOS ============ -->
+    <section id="proyectos" class="section">
+      <h2 class="section-title"><span class="section-num">02</span> <span data-i18n="projects.title">Proyectos</span></h2>
+
+      <!-- Caso de estudio: BarberOS -->
+      <article class="case-study">
+        <header class="case-header">
+          <p class="case-tag" data-i18n="case.tag">Caso de estudio · Proyecto principal</p>
+          <h3>BarberOS</h3>
+          <p class="case-tagline" data-i18n="case.tagline">SaaS multitenant para la gestión de negocios de servicios</p>
+        </header>
+        <div class="case-body">
+          <div class="case-block">
+            <h4 data-i18n="case.problemT">El problema</h4>
+            <p data-i18n="case.problemP">
+              Barberías, clínicas y negocios de servicios siguen gestionando turnos y clientes con
+              cuadernos, WhatsApp y planillas. Pierden reservas, no tienen métricas y no pueden escalar.
+              Las soluciones existentes son rígidas o están pensadas para un solo rubro.
+            </p>
+          </div>
+          <div class="case-block">
+            <h4 data-i18n="case.solutionT">La solución</h4>
+            <p data-i18n="case.solutionP">
+              Una plataforma multitenant donde cada negocio opera de forma aislada y segura sobre una
+              misma infraestructura. Un solo despliegue sirve a N clientes, con datos separados a nivel
+              de base de datos y una arquitectura pensada para agregar rubros sin reescribir el core.
+            </p>
+          </div>
+          <div class="case-block">
+            <h4 data-i18n="case.techT">Decisiones técnicas</h4>
+            <ul class="case-list">
+              <li data-i18n-html="case.tech1"><strong>FastAPI</strong> por su rendimiento, tipado con Pydantic y documentación automática de la API.</li>
+              <li data-i18n-html="case.tech2"><strong>Supabase (PostgreSQL)</strong> con políticas RLS para aislar los datos de cada tenant a nivel de fila: la seguridad vive en la base, no solo en el código.</li>
+              <li data-i18n-html="case.tech3"><strong>Multitenancy por diseño</strong>: cada tabla y cada consulta se pensaron desde el día uno para múltiples clientes, evitando la migración dolorosa de single a multi-tenant.</li>
+            </ul>
+          </div>
+          <div class="case-block">
+            <h4 data-i18n="case.roleT">Mi rol</h4>
+            <p data-i18n="case.roleP">
+              Soy el único desarrollador: diseñé la arquitectura, modelé la base de datos, implementé la
+              lógica de multitenancy y la API, y gestiono el proyecto de forma independiente — decisiones
+              de producto incluidas.
+            </p>
+          </div>
+        </div>
+        <footer class="case-stack" aria-label="Tecnologías">
+          <span>FastAPI</span><span>Python</span><span>Supabase</span><span>PostgreSQL</span><span>RLS</span><span data-i18n="case.stackMt">Multitenancy</span>
+        </footer>
+      </article>
+
+      <!-- Proyectos secundarios -->
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3 data-i18n="proj2.title">Sistema de pedidos por WhatsApp con IA</h3>
+          <p data-i18n="proj2.desc">
+            Plataforma de pedidos para gastronomía: un bot de WhatsApp toma pedidos con IA y un panel
+            web (PWA) los gestiona en tiempo real, con estadísticas y notificaciones push.
+          </p>
+          <p class="project-stack">Next.js · Supabase · n8n · PWA</p>
+        </article>
+        <article class="project-card">
+          <h3 data-i18n="proj3.title">Gestión de flota y logística</h3>
+          <p data-i18n="proj3.desc">
+            Sistema para empresas de transporte: control de viajes, combustible, viáticos, reparaciones
+            y costos por camión, pensado para reemplazar planillas dispersas.
+          </p>
+          <p class="project-stack">React · Vite · TypeScript</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCIA ============ -->
+    <section id="experiencia" class="section">
+      <h2 class="section-title"><span class="section-num">03</span> <span data-i18n="exp.title">Experiencia</span></h2>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <h3 data-i18n="exp.job1t">Desarrollador independiente — Proyectos SaaS</h3>
+          <p class="timeline-meta" data-i18n="exp.job1m">Actualidad</p>
+          <p data-i18n="exp.job1d">
+            Diseño y desarrollo de productos SaaS completos (BarberOS, sistema de pedidos con IA):
+            arquitectura, base de datos, API, frontend y despliegue. Gestión autónoma del ciclo completo.
+          </p>
+        </li>
+        <li class="timeline-item">
+          <h3 data-i18n="exp.job2t">Pasantía — Técnico eléctrico en bodega</h3>
+          <p class="timeline-meta" data-i18n="exp.job2m">Pasantía profesional</p>
+          <p data-i18n="exp.job2d">
+            Mantenimiento de instalaciones eléctricas en entorno productivo: diagnóstico de fallas,
+            trabajo preventivo y correctivo donde el tiempo de parada cuesta dinero.
+          </p>
+        </li>
+        <li class="timeline-item">
+          <h3 data-i18n="exp.job3t">Atención y ventas — Ferretería</h3>
+          <p class="timeline-meta" data-i18n="exp.job3m">1 año</p>
+          <p data-i18n="exp.job3d">
+            Un año resolviendo problemas concretos de clientes todos los días: entender la necesidad
+            real detrás de lo que piden, proponer la solución correcta y explicarla en lenguaje simple.
+            La mejor escuela de comunicación técnica que tuve.
+          </p>
+        </li>
+      </ol>
+
+      <div class="skills">
+        <h3 data-i18n="skills.title">Habilidades</h3>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h4 data-i18n="skills.devT">Desarrollo</h4>
+            <p>Python, FastAPI, TypeScript, Next.js/React, Supabase, PostgreSQL (RLS), Git, n8n</p>
+          </div>
+          <div class="skill-group">
+            <h4 data-i18n="skills.hwT">Técnico / Hardware</h4>
+            <p data-i18n="skills.hwP">Instalaciones eléctricas, diagnóstico de fallas, mantenimiento preventivo y correctivo</p>
+          </div>
+          <div class="skill-group">
+            <h4 data-i18n="skills.softT">Perfil</h4>
+            <p data-i18n="skills.softP">Resolución de problemas complejos, lógica de sistemas, autonomía, comunicación con clientes</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section id="contacto" class="section section-contact">
+      <h2 class="section-title"><span class="section-num">04</span> <span data-i18n="contact.title">Contacto</span></h2>
+      <p class="contact-lead" data-i18n="contact.lead">
+        ¿Buscás a alguien que resuelva? Estoy disponible para roles de desarrollo backend/full-stack,
+        posiciones junior con proyección y proyectos freelance.
+      </p>
+      <div class="contact-actions">
+        <a class="btn btn-primary" href="mailto:azzolinaignacio5@gmail.com" data-i18n="contact.email">Escribime un email</a>
+        <a class="btn btn-ghost" href="https://github.com/azzolinaignacio" rel="me noopener" target="_blank">GitHub</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/ignacio-azzolina-875bba243/" rel="me noopener" target="_blank">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Ignacio Azzolina · <span data-i18n="footer.made">Hecho a mano, sin frameworks de más.</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
