@@ -48,10 +48,18 @@ const I18N = {
     "case.roleP": "Soy el único desarrollador: diseñé la arquitectura, modelé la base de datos, implementé la lógica de multitenancy y la API, y gestiono el proyecto de forma independiente — decisiones de producto incluidas.",
     "case.stackMt": "Multitenancy",
 
+    "case2.tag": "Caso de estudio · Proyecto en producción",
+    "case2.tagline": "SaaS multitenant para empresas de transporte y logística",
+    "case2.problemP": "Las empresas de transporte de cargas —sobre todo las que operan cruces internacionales del Mercosur— gestionan flota, choferes, documentación (MIC/DTA, CRT) y facturación en planillas sueltas y carpetas de PDFs. Es fácil perder de vista un RTO por vencer, un chofer sin LINTI al día, o una factura que nadie cobró a tiempo. Y la carga de datos de cada viaje internacional es lenta: hay que transcribir a mano la ruta, la carga y los valores desde el MIC/DTA.",
+    "case2.solutionP": "Una plataforma multitenant donde cada empresa de transporte opera de forma aislada: flota, choferes, viajes (nacionales e internacionales), facturación, liquidación de sueldos y reportes, todo en un solo lugar. Para acelerar la carga de viajes internacionales, el sistema permite soltar el PDF del MIC/DTA y autocompleta origen, destino, carga, valores, camión y chofer automáticamente. El panel de administración multitenant gestiona el alta de empresas clientes y su suscripción mensual, cobrada de forma recurrente por Mercado Pago.",
+    "case2.tech1": "<strong>React + Vite + TypeScript</strong> en el frontend, priorizando velocidad de desarrollo e iteración rápida sobre un dashboard con muchas vistas (flota, choferes, viajes, facturación, liquidación, reportes).",
+    "case2.tech2": "<strong>Supabase (PostgreSQL)</strong> para el panel de administración multitenant: alta de empresas, aprovisionamiento de usuarios y estado de suscripción, aislando los datos de cada cliente.",
+    "case2.tech3": "<strong>Integración con la API de Mercado Pago</strong> para cobro recurrente: link de pago por empresa, débito automático, e historial de pagos con corte automático de acceso tras un período de gracia si el cliente deja de pagar.",
+    "case2.tech4": "<strong>Parsing automático de MIC/DTA</strong> y modelado de dominio específico del rubro: pasos fronterizos reales del Mercosur, vencimientos de documentación (RTO, LINTI) y liquidación de choferes con tarifa por km/cruce/día.",
+    "case2.roleP": "Soy el único desarrollador: diseñé el modelo de datos multitenant, construí las nueve secciones del panel operativo (dashboard, flota, choferes, viajes, facturación, liquidación, reportes, configuración y panel de administración de clientes), integré Mercado Pago para la cobranza recurrente, y llevé el producto a producción — hoy en uso por empresas de transporte reales con suscripción paga activa.",
+
     "proj2.title": "Sistema de pedidos por WhatsApp con IA",
     "proj2.desc": "Plataforma de pedidos para gastronomía: un bot de WhatsApp toma pedidos con IA y un panel web (PWA) los gestiona en tiempo real, con estadísticas y notificaciones push.",
-    "proj3.title": "Gestión de flota y logística",
-    "proj3.desc": "Sistema para empresas de transporte: control de viajes, combustible, viáticos, reparaciones y costos por camión, pensado para reemplazar planillas dispersas.",
 
     "exp.title": "Experiencia",
     "exp.job1t": "Desarrollador independiente — Proyectos SaaS",
@@ -126,10 +134,18 @@ const I18N = {
     "case.roleP": "I'm the sole developer: I designed the architecture, modeled the database, implemented the multitenancy logic and the API, and I manage the project independently — product decisions included.",
     "case.stackMt": "Multitenancy",
 
+    "case2.tag": "Case study · Live production project",
+    "case2.tagline": "Multitenant SaaS for trucking and logistics companies",
+    "case2.problemP": "Cargo trucking companies — especially those running international Mercosur border crossings — manage fleet, drivers, paperwork (MIC/DTA, CRT), and billing across loose spreadsheets and folders of PDFs. It's easy to lose track of an RTO inspection about to expire, a driver with an out-of-date LINTI permit, or an invoice nobody collected on time. And logging each international trip is slow: the route, cargo, and values have to be typed in by hand from the MIC/DTA document.",
+    "case2.solutionP": "A multitenant platform where each trucking company operates in isolation: fleet, drivers, trips (domestic and international), billing, payroll settlement, and reports, all in one place. To speed up logging international trips, the system lets you drop in the MIC/DTA PDF and it auto-fills origin, destination, cargo, values, truck, and driver. The multitenant admin panel manages onboarding of client companies and their monthly subscription, billed recurrently through Mercado Pago.",
+    "case2.tech1": "<strong>React + Vite + TypeScript</strong> on the frontend, prioritizing development speed and fast iteration across a dashboard with many views (fleet, drivers, trips, billing, payroll, reports).",
+    "case2.tech2": "<strong>Supabase (PostgreSQL)</strong> for the multitenant admin panel: company onboarding, user provisioning, and subscription status, isolating each customer's data.",
+    "case2.tech3": "<strong>Mercado Pago API integration</strong> for recurring billing: a payment link per company, automatic debit, and payment history with automatic access cutoff after a grace period if a customer stops paying.",
+    "case2.tech4": "<strong>Automatic MIC/DTA parsing</strong> and domain modeling specific to the industry: real Mercosur border crossings, document expirations (RTO, LINTI), and driver payroll based on per-km/crossing/day rates.",
+    "case2.roleP": "I'm the sole developer: I designed the multitenant data model, built all nine sections of the operations panel (dashboard, fleet, drivers, trips, billing, payroll, reports, settings, and client admin panel), integrated Mercado Pago for recurring billing, and shipped the product to production — it's in active use today by real trucking companies with an active paid subscription.",
+
     "proj2.title": "AI-powered WhatsApp ordering system",
     "proj2.desc": "Ordering platform for food businesses: a WhatsApp bot takes orders using AI while a web dashboard (PWA) manages them in real time, with statistics and push notifications.",
-    "proj3.title": "Fleet & logistics management",
-    "proj3.desc": "System for trucking companies: trips, fuel, per-diems, repairs, and per-truck cost tracking, built to replace scattered spreadsheets.",
 
     "exp.title": "Experience",
     "exp.job1t": "Independent Developer — SaaS Projects",

@@ -133,6 +133,63 @@
         </footer>
       </article>
 
+      <!-- Caso de estudio: TransGestión -->
+      <article class="case-study">
+        <header class="case-header">
+          <p class="case-tag" data-i18n="case2.tag">Caso de estudio · Proyecto en producción</p>
+          <h3>TransGestión</h3>
+          <p class="case-tagline" data-i18n="case2.tagline">SaaS multitenant para empresas de transporte y logística</p>
+        </header>
+        <div class="case-body">
+          <div class="case-block">
+            <h4 data-i18n="case.problemT">El problema</h4>
+            <p data-i18n="case2.problemP">
+              Las empresas de transporte de cargas —sobre todo las que operan cruces internacionales del
+              Mercosur— gestionan flota, choferes, documentación (MIC/DTA, CRT) y facturación en planillas
+              sueltas y carpetas de PDFs. Es fácil perder de vista un RTO por vencer, un chofer sin LINTI al
+              día, o una factura que nadie cobró a tiempo. Y la carga de datos de cada viaje internacional es
+              lenta: hay que transcribir a mano la ruta, la carga y los valores desde el MIC/DTA.
+            </p>
+          </div>
+          <div class="case-block">
+            <h4 data-i18n="case.solutionT">La solución</h4>
+            <p data-i18n="case2.solutionP">
+              Una plataforma multitenant donde cada empresa de transporte opera de forma aislada: flota,
+              choferes, viajes (nacionales e internacionales), facturación, liquidación de sueldos y
+              reportes, todo en un solo lugar. Para acelerar la carga de viajes internacionales, el sistema
+              permite soltar el PDF del MIC/DTA y autocompleta origen, destino, carga, valores, camión y
+              chofer automáticamente. El panel de administración multitenant gestiona el alta de empresas
+              clientes y su suscripción mensual, cobrada de forma recurrente por Mercado Pago.
+            </p>
+          </div>
+          <div class="case-block">
+            <h4 data-i18n="case.techT">Decisiones técnicas</h4>
+            <ul class="case-list">
+              <li data-i18n-html="case2.tech1"><strong>React + Vite + TypeScript</strong> en el frontend, priorizando velocidad de desarrollo e iteración rápida sobre un dashboard con muchas vistas (flota, choferes, viajes, facturación, liquidación, reportes).</li>
+              <li data-i18n-html="case2.tech2"><strong>Supabase (PostgreSQL)</strong> para el panel de administración multitenant: alta de empresas, aprovisionamiento de usuarios y estado de suscripción, aislando los datos de cada cliente.</li>
+              <li data-i18n-html="case2.tech3"><strong>Integración con la API de Mercado Pago</strong> para cobro recurrente: link de pago por empresa, débito automático, e historial de pagos con corte automático de acceso tras un período de gracia si el cliente deja de pagar.</li>
+              <li data-i18n-html="case2.tech4"><strong>Parsing automático de MIC/DTA</strong> y modelado de dominio específico del rubro: pasos fronterizos reales del Mercosur, vencimientos de documentación (RTO, LINTI) y liquidación de choferes con tarifa por km/cruce/día.</li>
+            </ul>
+          </div>
+          <div class="case-block">
+            <h4 data-i18n="case.roleT">Mi rol</h4>
+            <p data-i18n="case2.roleP">
+              Soy el único desarrollador: diseñé el modelo de datos multitenant, construí las nueve
+              secciones del panel operativo (dashboard, flota, choferes, viajes, facturación, liquidación,
+              reportes, configuración y panel de administración de clientes), integré Mercado Pago para la
+              cobranza recurrente, y llevé el producto a producción — hoy en uso por empresas de transporte
+              reales con suscripción paga activa.
+            </p>
+          </div>
+        </div>
+        <footer class="case-stack" aria-label="Tecnologías">
+          <span>React</span><span>Vite</span><span>TypeScript</span><span>Supabase</span><span>PostgreSQL</span><span>Mercado Pago API</span>
+        </footer>
+        <p class="case-demo">
+          <a href="https://transgestion-app.vercel.app" target="_blank" rel="noopener" data-i18n="projects.demoLink">Demo en vivo ↗</a>
+        </p>
+      </article>
+
       <!-- Proyectos secundarios -->
       <div class="projects-grid">
         <article class="project-card">
@@ -144,17 +201,6 @@
           <p class="project-stack">Next.js · Supabase · n8n · PWA</p>
           <p class="project-links">
             <a href="https://github.com/GinoRobla/sistema-pedidos-whatsapp-ia" target="_blank" rel="noopener" data-i18n="projects.repoLink">Código en GitHub ↗</a>
-          </p>
-        </article>
-        <article class="project-card">
-          <h3 data-i18n="proj3.title">Gestión de flota y logística</h3>
-          <p data-i18n="proj3.desc">
-            Sistema para empresas de transporte: control de viajes, combustible, viáticos, reparaciones
-            y costos por camión, pensado para reemplazar planillas dispersas.
-          </p>
-          <p class="project-stack">React · Vite · TypeScript</p>
-          <p class="project-links">
-            <a href="https://transgestion-app.vercel.app" target="_blank" rel="noopener" data-i18n="projects.demoLink">Demo en vivo ↗</a>
           </p>
         </article>
       </div>

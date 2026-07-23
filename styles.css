@@ -303,10 +303,24 @@ main { max-width: 1000px; margin: 0 auto; padding: 0 1.25rem; }
   border-radius: 999px;
 }
 
+.case-demo { margin-top: 1.25rem; }
+.case-demo a {
+  color: var(--accent-contrast);
+  background: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.55rem 1.1rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  transition: background-color 150ms ease;
+}
+.case-demo a:hover { background: var(--accent-strong); }
+
 /* ============ Cards de proyectos ============ */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 420px));
   gap: 1.25rem;
 }
 
